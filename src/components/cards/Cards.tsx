@@ -1,7 +1,6 @@
 import { use, useState } from 'react';
 import type { card } from '../../types/cardType';
 import Stack from './Stack';
-import Selected from './Selected';
 
 interface CardsProps {
     cardsPromise: Promise<card[]>

@@ -9,13 +9,14 @@ interface StackProps {
     handleSelectedCards: (card: card) => void;
     selected: card[];
     setSelected: Dispatch<SetStateAction<card[]>>;
+    handleRemoveCard: (card: card) => void;
 }
 
 
 
 
 
-const Stack = ({ cards, selected, setSelected, handleSelectedCards, }: StackProps) => {
+const Stack = ({ cards, selected, setSelected, handleSelectedCards, handleRemoveCard }: StackProps) => {
 
     console.log(cards, 'cards from stack')
     return (
@@ -44,9 +45,9 @@ const Stack = ({ cards, selected, setSelected, handleSelectedCards, }: StackProp
 
             </div>
 
-            <div className='justify-content justify-center p-5 w-3xl h-min border border-gray-300 rounded-2xl'>
+            <div className='justify-content justify-center p-5 w-3xl h-min border border-gray-300 rounded-2xl mx-5 mt-5'>
                 <h2 className="text-xl font-bold">Your Stack</h2>
-                <h2>{selected.length} Technology Selected</h2>
+                <h2 className='text-gray-500'>{selected.length} Technology Selected</h2>
 
                 <Selected selected={selected} setSelected={setSelected}></Selected>
 

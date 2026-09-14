@@ -4,7 +4,7 @@ import textlogo from '../assets/logo-text.png'
 const Nav = () => {
     return (
             
-            <nav className='container mx-auto px-10'>
+            <nav className='container mx-auto px-10 sticky top-0 bg-white p-4 shadow'>
         <div className=' container mx-auto flex justify-between'>
 
                 <img src={textlogo} alt="" />
