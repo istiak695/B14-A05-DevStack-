@@ -1,16 +1,17 @@
-import { useState } from 'react';
+import { useState, type Dispatch, type SetStateAction } from 'react';
 import type { card } from '../../types/cardType';
 import { FaStar } from 'react-icons/fa';
 import { toast } from 'react-toastify';
-import Cards from './Cards';
 
  interface CardsProps{
     card: card
     handleSelectedCards: (card: card) => void
+    selected: card[];
+    setSelected: Dispatch<SetStateAction<card[]>>;
 }
 
 
-const FunCard = ({ card, handleSelectedCards }: CardsProps) => {
+const FunCard = ({ card, handleSelectedCards,selected, setSelected }: CardsProps) => {
     const [isSelected, setIsSelected] = useState(false)
     console.log(isSelected, setIsSelected, "isSelected, setIsSelected");
 
