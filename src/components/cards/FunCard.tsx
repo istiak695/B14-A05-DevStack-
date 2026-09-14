@@ -22,7 +22,7 @@ handleSelectedCards(card);
 
 
 
-    return <div>
+    return <div className = ''>
         <div className="card bg-base-100  shadow-sm">
             <figure className='justify-between mx-3'>
                 <img src={card.icon} alt={card.name} className='w-10 h-12 mx-10' />

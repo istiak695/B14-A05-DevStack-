@@ -29,7 +29,7 @@ const Cards = ({ cardsPromise }: CardsProps) => {
                 <p>Pick one technology per category to build your ideal stack.</p>
             </div>
 
-            <div className="flex gap-4">
+            <div className=" flex gap-4">
                 <Stack
                     cards={cards}
                     handleSelectedCards={handleSelectedCards}

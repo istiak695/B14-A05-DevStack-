@@ -2,7 +2,6 @@
 import { Suspense } from 'react'
 import './App.css'
 import Banner from './components/Banner'
-import Body from './components/Body'
 import Nav from './components/Nav'
 import Cards from './components/cards/Cards'
 import type { card } from './types/cardType'
@@ -21,7 +20,6 @@ const cardsPromise= cardsFetch();
     <>
 <Nav></Nav>
 <Banner></Banner>
-<Body></Body>
 <Suspense fallback={<h2>Loading...</h2>}>
 <Cards cardsPromise ={cardsPromise}/>
 
