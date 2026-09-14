@@ -58,7 +58,7 @@ handleSelectedCards(card);
                             handleSelected();
                         }}
 
-                        className="btn btn-neutral container rounded-2xl"
+                        className="btn btn-neutral w-full rounded-2xl"
                         disabled={isSelected}>
                         {isSelected === true ? "Added" : "Add to Stack"}
                     </button>

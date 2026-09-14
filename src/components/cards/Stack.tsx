@@ -20,8 +20,8 @@ const Stack = ({ cards, selected, setSelected, handleSelectedCards, handleRemove
 
     console.log(cards, 'cards from stack')
     return (
-        <div className="flex">
-            <div className=' grid grid-cols-3 gap-4 mt-6'>
+        <div className="flex-block md:flex gap-4">
+            <div className=' grid  grid-cols-1 md:grid-cols-3 gap-4 mt-6'>
 
 
 
