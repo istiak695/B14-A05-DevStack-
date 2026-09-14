@@ -38,10 +38,7 @@ const Cards = ({ cardsPromise }: CardsProps) => {
                     setSelected={setSelectedCards}
                 />
 
-                <Selected 
-                    selected={selectedCards} 
-                    setSelected={setSelectedCards} 
-                />
+               
             </div>
         </div>
     );
