@@ -15,6 +15,10 @@ const Cards = ({ cardsPromise }: CardsProps) => {
         setSelectedCards(newSelectedCards);
     }
 
+    const handleRemoveCard = (card: card): void => {
+        setSelectedCards(selectedCards.filter(selectedCard => selectedCard.id !== card.id));
+    }
+
     const cards = use(cardsPromise);
 
     return (
@@ -33,6 +37,7 @@ const Cards = ({ cardsPromise }: CardsProps) => {
                 <Stack
                     cards={cards}
                     handleSelectedCards={handleSelectedCards}
+                    handleRemoveCard={handleRemoveCard}
                     selected={selectedCards}
                     setSelected={setSelectedCards}
                 />

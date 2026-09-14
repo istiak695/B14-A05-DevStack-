@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 }
 
 
-const FunCard = ({ card, handleSelectedCards,selected, setSelected }: CardsProps) => {
+const FunCard = ({ card, handleSelectedCards, }: CardsProps) => {
     const [isSelected, setIsSelected] = useState(false)
     console.log(isSelected, setIsSelected, "isSelected, setIsSelected");
 

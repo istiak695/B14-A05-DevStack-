@@ -16,7 +16,7 @@ interface StackProps {
 
 
 
-const Stack = ({ cards, selected, setSelected, handleSelectedCards, handleRemoveCard }: StackProps) => {
+const Stack = ({ cards, selected, setSelected, handleSelectedCards }: StackProps) => {
 
     console.log(cards, 'cards from stack')
     return (
